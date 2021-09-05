@@ -62,6 +62,11 @@ import org.jsoup.select.Elements;
 	        Elements imageElements = document.select("img");
 	        for(Element imageElement : imageElements){
 	            String strImageURL = imageElement.attr("abs:src");
+		            try {
+					Thread.sleep(5000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 	            downloadImage(strImageURL);
 	        }
 	 
