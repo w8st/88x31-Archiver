@@ -63,7 +63,7 @@ import org.jsoup.select.Elements;
 	        for(Element imageElement : imageElements){
 	            String strImageURL = imageElement.attr("abs:src");
 		            try {
-					Thread.sleep(5000);
+					Thread.sleep(7500);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
